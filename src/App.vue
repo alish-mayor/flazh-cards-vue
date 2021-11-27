@@ -1,21 +1,22 @@
 <template>
   <div id="app">
     <app-header></app-header>
+    <app-form></app-form>
   </div>
 </template>
 
 <script>
 import appHeader from './components/AppHeader.vue'
+import appForm from './components/AppForm.vue'
 
 export default {
   name: 'App',
   components: {
     appHeader,
-    
+    appForm,
   }
 }
 </script>
-
 
 <style>
 #app {
