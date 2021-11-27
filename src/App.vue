@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <app-header></app-header>
+    <app-content></app-content>
     <app-form></app-form>
   </div>
 </template>
@@ -8,12 +9,14 @@
 <script>
 import appHeader from './components/AppHeader.vue'
 import appForm from './components/AppForm.vue'
+import appContent from './components/AppContent.vue'
 
 export default {
   name: 'App',
   components: {
     appHeader,
     appForm,
+    appContent
   }
 }
 </script>
