@@ -33,4 +33,15 @@ body{
   min-height: 100vh;
   background: rgb(61, 57, 57);
 }
+
+.btn {
+        background: transparent;
+        border: 1px solid rgb(158, 68, 209);
+        font-family: inherit;
+        font-size: 16px;
+        padding: 0.5rem;
+        border-radius: 5px;
+        color: aliceblue;
+        cursor: pointer;
+    }
 </style>
