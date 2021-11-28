@@ -22,12 +22,18 @@ export default {
 </script>
 
 <style>
+:root{
+  --primary: #9d44d1;
+  --white: #FFFFFF;
+  --background: #3d3939;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 1rem;
-  color: rgb(158, 68, 209);
+  color: var(--primary);
   position: relative;
 }
 
@@ -35,17 +41,17 @@ body{
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background: rgb(61, 57, 57);
+  background: var(--background);
 }
 
 .btn {
         background: transparent;
-        border: 1px solid rgb(158, 68, 209);
+        border: 1px solid var(--primary);
         font-family: inherit;
         font-size: 16px;
         padding: 0.5rem;
         border-radius: 5px;
-        color: aliceblue;
+        color: var(--white);
         cursor: pointer;
     }
 </style>

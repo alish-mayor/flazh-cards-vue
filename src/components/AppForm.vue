@@ -64,16 +64,16 @@ export default {
 
 
 form {
-  background: blueviolet;
+  background: var(--primary);
   padding: 1rem 3rem;
   text-align: center;
   border-radius: 5px;
   position: relative;
-  color: aliceblue;
+  color: var(--white);
 }
 
 .btn{
-  border: 1px solid white;
+  border: 1px solid var(--white);
 }
 
 .btn_cancel {

@@ -39,7 +39,7 @@ export default {
 <style scoped>
     .card{
         width: 300px;
-        border: 1px solid rgb(158, 68, 209);
+        border: 1px solid var(--primary);
         position: relative;
         height: 180px;
         flex-wrap: wrap;
@@ -47,7 +47,7 @@ export default {
         justify-content: center;
         align-items: center;
         margin-top: 1rem;
-        color: aliceblue;
+        color: var(--white);
         cursor: pointer;
         transition: background 200ms ease-in-out;
         border-radius: 5px;
@@ -57,22 +57,14 @@ export default {
         position: absolute;
         top: 10px;
         right: 10px;
-        background: transparent;
-        border: 1px solid rgb(158, 68, 209);
-        font-family: inherit;
-        font-size: 16px;
-        padding: 0.5rem;
-        border-radius: 5px;
-        color: aliceblue;
-        cursor: pointer;
         transition: border 200ms ease-in-out;
     }
 
     .card.active{
-        background: blueviolet;
+        background: var(--primary);
     }
 
     .card.active .btn{
-        border-color: white;
+        border-color: var(--white);
     }
 </style>
