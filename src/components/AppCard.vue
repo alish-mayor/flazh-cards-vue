@@ -51,6 +51,7 @@ export default {
         cursor: pointer;
         transition: background 200ms ease-in-out;
         border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
     }
 
     .btn {
@@ -61,7 +62,7 @@ export default {
     }
 
     .btn_delete{
-        background: #091832;
+        background: var(--secondary);
         border: none;
         transition: background 200ms ease-in-out;
         color: var(--white);
@@ -69,7 +70,7 @@ export default {
 
     .btn_delete.active{
         background: var(--white);
-        color: #091832;
+        color: var(--secondary);
     }
 
     .card.active{

@@ -64,8 +64,8 @@ export default {
 
 
 form {
-  background: var(--primary);
-  padding: 1rem 3rem;
+  background: var(--secondary);
+  padding: 1rem 4rem;
   text-align: center;
   border-radius: 5px;
   position: relative;
@@ -95,6 +95,6 @@ input {
   margin-bottom: 1rem;
   padding: 0.5rem;
   border-radius: 5px;
-  border: none
+  border: none;
 }
 </style>

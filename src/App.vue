@@ -24,8 +24,10 @@ export default {
 <style>
 :root{
   --primary: #ad089d;
+  --secondary: #091832;
   --white: #FFFFFF;
   --background: #e9e9e9;
+
 }
 
 #app {
