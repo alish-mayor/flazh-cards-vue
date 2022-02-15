@@ -28,9 +28,22 @@ export default {
 
 <style scoped>
 .content{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    grid-row-gap: 1.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+    .content{
+        grid-template-columns: 1fr;
+    }
 }
 </style>

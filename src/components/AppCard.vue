@@ -46,7 +46,6 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 1rem;
         color: var(--primary);
         cursor: pointer;
         transition: background 200ms ease-in-out;
