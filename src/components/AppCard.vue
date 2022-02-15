@@ -2,7 +2,7 @@
     <div class="card" :class="active" @click="notTranslated = !notTranslated">
         <h2 v-if="notTranslated">{{original}}</h2>
         <h2 v-else class="card_translated">{{translated}}</h2>
-        <button class="btn" @click.stop="deleteCard">Delete card</button>
+        <button class="btn btn_delete" :class="notTranslated ? '' : 'active'" @click.stop="deleteCard">Delete</button>
     </div>
 </template>
 
@@ -38,8 +38,8 @@ export default {
 
 <style scoped>
     .card{
+        background: var(--white);
         width: 300px;
-        border: 1px solid var(--primary);
         position: relative;
         height: 180px;
         flex-wrap: wrap;
@@ -47,7 +47,7 @@ export default {
         justify-content: center;
         align-items: center;
         margin-top: 1rem;
-        color: var(--white);
+        color: var(--primary);
         cursor: pointer;
         transition: background 200ms ease-in-out;
         border-radius: 5px;
@@ -57,14 +57,26 @@ export default {
         position: absolute;
         top: 10px;
         right: 10px;
-        transition: border 200ms ease-in-out;
+        color: var(--primary);
+    }
+
+    .btn_delete{
+        background: #091832;
+        border: none;
+        transition: background 200ms ease-in-out;
+        color: var(--white);
+    }
+
+    .btn_delete.active{
+        background: var(--white);
+        color: #091832;
     }
 
     .card.active{
         background: var(--primary);
     }
 
-    .card.active .btn{
-        border-color: var(--white);
+    .card_translated{
+        color: var(--white);
     }
 </style>

@@ -23,16 +23,15 @@ export default {
 
 <style>
 :root{
-  --primary: #9d44d1;
+  --primary: #ad089d;
   --white: #FFFFFF;
-  --background: #3d3939;
+  --background: #e9e9e9;
 }
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 1rem;
   color: var(--primary);
   position: relative;
 }
