@@ -24,6 +24,8 @@ export default {
     },
     methods : {
         addCard(){
+            if(this.originalInput.trim().length < 1 || this.translatedInput.trim().length < 1) return;
+
             this.$store.commit('addCard', {
                 original : this.originalInput,
                 translated : this.translatedInput
