@@ -12,10 +12,7 @@ export default new Vuex.Store({
   plugins: [createPersistedState()],
   mutations: {
     addCard(state, word) {
-      state.cards.push({
-        original: word.original,
-        translated: word.translated,
-      });
+      state.cards.push(word);
     },
     deleteCard(state, index) {
       state.cards.splice(index, 1);

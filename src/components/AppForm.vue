@@ -25,11 +25,7 @@ export default {
     methods : {
         addCard(){
             if(this.originalInput.trim().length < 1 || this.translatedInput.trim().length < 1) return;
-
-            this.$store.commit('addCard', {
-                original : this.originalInput,
-                translated : this.translatedInput
-            });
+            this.$store.commit('addCard', this.word);
             this.$store.commit('changeShowForm');
             this.clearInputs();
         },
@@ -45,6 +41,12 @@ export default {
     computed: {
         showForm(){
             return this.$store.state.showForm;
+        },
+        word(){
+          return {
+            original: this.originalInput,
+            translated: this.translatedInput
+          }
         }
     }
     
