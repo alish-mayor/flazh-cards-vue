@@ -25,7 +25,7 @@ export default {
 :root{
   --primary: #ad089d;
   --secondary: #091832;
-  --white: #FFFFFF;
+  --light: #FFFFFF;
   --background: #e9e9e9;
 
 }
@@ -52,7 +52,7 @@ body{
         font-size: 16px;
         padding: 0.5rem;
         border-radius: 5px;
-        color: var(--white);
+        color: var(--light);
         cursor: pointer;
     }
 </style>

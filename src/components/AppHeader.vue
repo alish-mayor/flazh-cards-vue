@@ -29,7 +29,7 @@ module.exports = {
     }
 
     .logo span{
-        color: var(--white);
+        color: var(--light);
     }
 
     .header{

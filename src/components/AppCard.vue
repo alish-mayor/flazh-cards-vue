@@ -38,7 +38,7 @@ export default {
 
 <style scoped>
     .card{
-        background: var(--white);
+        background: var(--light);
         width: 300px;
         position: relative;
         height: 180px;
@@ -64,11 +64,11 @@ export default {
         background: var(--secondary);
         border: none;
         transition: background 200ms ease-in-out;
-        color: var(--white);
+        color: var(--light);
     }
 
     .btn_delete.active{
-        background: var(--white);
+        background: var(--light);
         color: var(--secondary);
     }
 
@@ -77,6 +77,6 @@ export default {
     }
 
     .card_translated{
-        color: var(--white);
+        color: var(--light);
     }
 </style>

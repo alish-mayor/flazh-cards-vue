@@ -73,11 +73,11 @@ form {
   text-align: center;
   border-radius: 5px;
   position: relative;
-  color: var(--white);
+  color: var(--light);
 }
 
 .btn{
-  border: 1px solid var(--white);
+  border: 1px solid var(--light);
 }
 
 .btn_cancel {
